@@ -1,0 +1,6 @@
+Build.PL
+lib/File/Lockfile.pm
+lib/File/Lockfile.pod
+MANIFEST			This list of files
+META.yml
+README
