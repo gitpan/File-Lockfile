@@ -1,7 +1,7 @@
-Cache::Weak
+File::Lockfile
  
-Perl object cache based on weak references
-  
+Simple lockfile module
+
 INSTALLATION
   
 To install this module type the following:
