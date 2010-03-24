@@ -1,6 +1,6 @@
 ---
 name: File-Lockfile
-version: 1.0.2
+version: v1.0.3
 author:
   - 'Sergey Sinkovskiy <glorybox@cpan.org>'
 abstract: create lockfile to prevent process simultaneous run
@@ -10,12 +10,14 @@ resources:
 requires:
   Class::Data::Inheritable: 0.06
   File::Temp: 0.21
-  perl: 5.6.1
+  perl: v5.6.1
+configure_requires:
+  Module::Build: 0.35
 provides:
   File::Lockfile:
     file: lib/File/Lockfile.pm
-    version: 1.0.2
-generated_by: Module::Build version 0.2808
+    version: v1.0.3
+generated_by: Module::Build version 0.35
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
