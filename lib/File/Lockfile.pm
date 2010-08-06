@@ -3,7 +3,7 @@ package File::Lockfile;
 use strict;
 use warnings;
 
-use version; our $VERSION = qv('1.0.4');
+use version; our $VERSION = qv('1.0.5');
 
 require Class::Data::Inheritable;
 use base qw(Class::Data::Inheritable);
@@ -18,7 +18,7 @@ sub new {
 
 sub write {
 	my $fh;
-	open $fh, '>', __PACKAGE__->lockfile or die("Can't write lockfile: ".__PACKAGE->lockfile.": $!");
+	open $fh, '>', __PACKAGE__->lockfile or die("Can't write lockfile: ".__PACKAGE__->lockfile.": $!");
 	print $fh $$;
 	close $fh;
 }
